@@ -1,19 +1,5 @@
 export const workContent = [
   {
-    projectName: 'Number Dekho',
-    projectType: 'WEB & APP DEVELOPMENT',
-    projectUrl: '/case-study/numberdekho',
-    filterTags: 'app-dev e-comm',
-    projectThumb: '/img/numberdekho.webp',
-  },
-  {
-    projectName: 'Broopi',
-    projectType: 'WEB & APP DEVELOPMENT',
-    projectUrl: '/case-study/broopi',
-    filterTags: 'sass cms',
-    projectThumb: '/img/broopi-thumb.webp',
-  },
-  {
     projectName: 'Starstell',
     projectType: 'WEB & APP DEVELOPMENT',
     projectUrl: '/case-study/starstell',
@@ -26,13 +12,6 @@ export const workContent = [
     projectUrl: '/case-study/magicfinserv',
     filterTags: 'cms infra',
     projectThumb: '/img/magicfinserv-thumb.webp',
-  },
-  {
-    projectName: 'Milanoa',
-    projectType: 'WEB DEVELOPMENT',
-    projectUrl: '/case-study/milanoa',
-    filterTags: 'infra sass',
-    projectThumb: '/img/milanoa-thumb.webp',
   },
   {
     projectName: 'Vimal Wires & Cable',
@@ -159,5 +138,26 @@ export const workContent = [
     projectUrl: '/case-study/snitch',
     filterTags: 'app-dev e-comm',
     projectThumb: '/img/cs/snitch/snitch1.png',
+  },
+    {
+    projectName: 'Number Dekho',
+    projectType: 'WEB & APP DEVELOPMENT',
+    projectUrl: '/case-study/numberdekho',
+    filterTags: 'app-dev e-comm',
+    projectThumb: '/img/numberdekho.webp',
+  },
+    {
+    projectName: 'Broopi',
+    projectType: 'WEB & APP DEVELOPMENT',
+    projectUrl: '/case-study/broopi',
+    filterTags: 'sass cms',
+    projectThumb: '/img/broopi-thumb.webp',
+  },
+    {
+    projectName: 'Milanoa',
+    projectType: 'WEB DEVELOPMENT',
+    projectUrl: '/case-study/milanoa',
+    filterTags: 'infra sass',
+    projectThumb: '/img/milanoa-thumb.webp',
   },
 ];
