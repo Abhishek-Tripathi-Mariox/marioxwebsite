@@ -41,11 +41,9 @@ const CaseStudy = () => {
 
   const filters = [
     { label: 'All', value: 'all' },
-    { label: 'App Dev', value: 'app-dev' },
     { label: 'FinTech', value: 'fintech' },
     { label: 'EdTech', value: 'edtech' },
     { label: 'E-Commerce', value: 'e-comm' },
-    { label: 'SaaS', value: 'sass' },
     { label: 'CMS', value: 'cms' },
   ];
 

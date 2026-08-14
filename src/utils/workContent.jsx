@@ -3,14 +3,14 @@ export const workContent = [
     projectName: 'Starstell',
     projectType: 'WEB & APP DEVELOPMENT',
     projectUrl: '/case-study/starstell',
-    filterTags: 'app-dev sass',
+    filterTags: 'app-dev e-comm',
     projectThumb: '/img/starstell-thumb.webp',
   },
   {
     projectName: 'Magicfinserv',
     projectType: 'E-COMMERCE PLATFORM DEVELOPEMENT',
     projectUrl: '/case-study/magicfinserv',
-    filterTags: 'cms infra',
+    filterTags: 'app-dev fintech cms',
     projectThumb: '/img/magicfinserv-thumb.webp',
   },
   {
@@ -150,14 +150,14 @@ export const workContent = [
     projectName: 'Broopi',
     projectType: 'WEB & APP DEVELOPMENT',
     projectUrl: '/case-study/broopi',
-    filterTags: 'sass cms',
+    filterTags: 'app-dev cms',
     projectThumb: '/img/broopi-thumb.webp',
   },
     {
     projectName: 'Milanoa',
     projectType: 'WEB DEVELOPMENT',
     projectUrl: '/case-study/milanoa',
-    filterTags: 'infra sass',
+    filterTags: 'app-dev cms',
     projectThumb: '/img/milanoa-thumb.webp',
   },
 ];

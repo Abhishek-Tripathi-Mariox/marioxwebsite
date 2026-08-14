@@ -299,7 +299,7 @@ const About = () => {
                   typeTwo: true,
                 },
                 {
-                  memberName: 'Akshay',
+                  memberName: 'Trisha',
                   memeberDesignation: 'CONTENT WRITER',
                   memberImg: '/img/akshay-2.webp',
                   typeTwo: true,
