@@ -50,6 +50,24 @@ Disallow: */embed
 Disallow: */embed
 Disallow: /blog/?p=
 
+Disallow: /case-study/skydo
+Disallow: /case-study/famapp
+Disallow: /case-study/stockgro
+Disallow: /case-study/myzeller
+Disallow: /case-study/airwallex
+Disallow: /case-study/soldo
+Disallow: /case-study/yonder
+Disallow: /case-study/lunar
+Disallow: /case-study/graphy
+Disallow: /case-study/edtechhub
+Disallow: /case-study/testbook
+Disallow: /case-study/teachmint
+Disallow: /case-study/sunstone
+Disallow: /case-study/learnosity
+Disallow: /case-study/clueylearning
+Disallow: /case-study/senecalearning
+Disallow: /case-study/snitch
+
 Allow: /blog/tag/new-google-assistant-apk
 Allow: /blog/tag/apps-built-with-flutter
 Allow: /blog/wp-includes/images/
