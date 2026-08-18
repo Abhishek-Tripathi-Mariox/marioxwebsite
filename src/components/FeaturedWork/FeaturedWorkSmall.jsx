@@ -1,8 +1,5 @@
 import Link from 'next/link';
-import React, { useRef } from 'react';
-import { useGSAP } from '@gsap/react';
-import gsap from 'gsap';
-import SplitText from 'gsap/dist/SplitText';
+import React from 'react';
 
 const FeaturedWorkSmall = ({
   initialText,
@@ -12,55 +9,8 @@ const FeaturedWorkSmall = ({
   projectThumb,
   className,
 }) => {
-  const workSingle = useRef();
-
-  useGSAP(
-    () => {
-      const mm = gsap.matchMedia();
-      mm.add(
-        {
-          small: '(max-width: 767px)',
-          large: '(min-width: 768px)',
-        },
-        (ctx) => {
-          const { small } = ctx.conditions;
-
-          // const workWrapper = workSingle.current;
-
-          if (window.innerWidth > 1200 && workSingle.current) {
-            workSingle.current
-              .querySelectorAll('.work-text-anim')
-              .forEach((line) => {
-                let text = new SplitText(line, { type: 'words' });
-                let letters = text.words; //an array of all the divs that wrap each character
-
-                var action = gsap
-                  .timeline({ paused: true, overwrite: true })
-                  .from(letters, {
-                    duration: 0.5,
-                    autoAlpha: 0,
-                    y: 20,
-                    ease: 'power2.out',
-                    stagger: 0.05,
-                  });
-
-                workSingle.current.addEventListener('mouseenter', () => {
-                  action.timeScale(1).play();
-                });
-                workSingle.current.addEventListener('mouseleave', () => {
-                  action.timeScale(2).reverse();
-                });
-              });
-          }
-        }
-      );
-    },
-    {
-      // scope: workSingle,
-    }
-  );
   return (
-    <div className={`work-single-small ${className}`} ref={workSingle}>
+    <div className={`work-single-small ${className}`}>
       <div className="w-full aspect-square lg:aspect-auto overflow-hidden relative group">
         <img src={projectThumb} alt="mariox" className="w-full h-full object-cover" />
 

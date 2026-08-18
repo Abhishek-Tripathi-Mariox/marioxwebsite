@@ -161,3 +161,19 @@ export const workContent = [
     projectThumb: '/img/milanoa-thumb.webp',
   },
 ];
+
+// Small curated pick used by homepage/services "Selected Work" teaser sections
+// (unlike the full /case-study listing, this must stay short — it renders in a
+// pinned horizontal-scroll block where every extra card adds real scroll distance).
+export const featuredWork = [
+  'numberdekho',
+  'skydo',
+  'famapp',
+  'graphy',
+  'snitch',
+  'vimal-wires-and-cable',
+]
+  .map((slug) =>
+    workContent.find((work) => work.projectUrl === `/case-study/${slug}`)
+  )
+  .filter(Boolean);

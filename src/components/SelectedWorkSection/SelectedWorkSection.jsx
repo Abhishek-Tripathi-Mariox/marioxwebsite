@@ -4,7 +4,7 @@ import FeaturedWork from '../FeaturedWork/FeaturedWork';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
-import { workContent } from '@/utils/workContent';
+import { featuredWork } from '@/utils/workContent';
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(useGSAP);
@@ -65,14 +65,14 @@ const SelectedWorkSection = ({ className, heading, data }) => {
               <div
                 className={`flex h-full work-block flex-wrap md:flex-nowrap gap-8 md:gap-0`}
               >
-                {(data || workContent).map(
+                {(data || featuredWork).map(
                   (
                     { projectName, projectType, projectUrl, projectThumb },
                     index
                   ) => (
                     <div key={index} className="md:min-w-[50%] md:px-4 ">
                       <FeaturedWork
-                        initialText={`0${index + 1}`}
+                        initialText={String(index + 1).padStart(2, '0')}
                         projectName={projectName}
                         projectType={projectType}
                         projectLink={projectUrl}

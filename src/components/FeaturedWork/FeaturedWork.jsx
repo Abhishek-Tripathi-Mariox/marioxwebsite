@@ -1,8 +1,5 @@
 import Link from 'next/link';
-import React, { useRef } from 'react';
-import { useGSAP } from '@gsap/react';
-import gsap from 'gsap';
-import SplitText from 'gsap/dist/SplitText';
+import React from 'react';
 
 const FeaturedWork = ({
   initialText,
@@ -11,57 +8,8 @@ const FeaturedWork = ({
   projectName,
   projectThumb,
 }) => {
-  const workSingle = useRef();
-
-  console.log("projectThumb",projectThumb)
-
-  useGSAP(
-    () => {
-      const mm = gsap.matchMedia();
-      mm.add(
-        {
-          small: '(max-width: 767px)',
-          large: '(min-width: 768px)',
-        },
-        (ctx) => {
-          const { small } = ctx.conditions;
-
-          // const workWrapper = workSingle.current;
-
-          if (window.innerWidth > 1200) {
-            workSingle.current
-              .querySelectorAll('.work-text-anim')
-              .forEach((line) => {
-                let text = new SplitText(line, { type: 'words' });
-                let letters = text.words; //an array of all the divs that wrap each character
-
-                var action = gsap
-                  .timeline({ paused: true, overwrite: true })
-                  .from(letters, {
-                    duration: 0.5,
-                    autoAlpha: 0,
-                    y: 20,
-                    ease: 'power2.out',
-                    stagger: 0.05,
-                  });
-
-                workSingle.current.addEventListener('mouseenter', () => {
-                  action.timeScale(1).play();
-                });
-                workSingle.current.addEventListener('mouseleave', () => {
-                  action.timeScale(2).reverse();
-                });
-              });
-          }
-        }
-      );
-    },
-    {
-      scope: workSingle,
-    }
-  );
   return (
-    <div className="work-single" ref={workSingle}>
+    <div className="work-single">
       <div className="w-full aspect-square lg:aspect-auto lg:h-[600px] overflow-hidden relative group">
         <img src={projectThumb} alt="mariox" className="w-full h-full object-cover" />
 
@@ -72,7 +20,7 @@ const FeaturedWork = ({
           </span>
         </div>
         <div className="absolute bottom-0 left-0 bg-primary w-6 h-6 duration-1000 ease-elastic group-hover:w-[270px] group-hover:h-[270px] hidden xl:block"></div>
-        <div className="absolute bottom-0 left-0 w-[180px]  md:w-[270px] aspect-square p-4 md:p-10 flex flex-col bg-primary xl:bg-transparent">
+        <div className="absolute bottom-0 left-0 w-[180px]  md:w-[270px] md:aspect-square p-4 md:p-10 flex flex-col bg-primary xl:bg-transparent">
           <div className="text-12 mb-4 text-white work-text-anim">
             {projectName}
           </div>
