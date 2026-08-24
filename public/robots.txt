@@ -67,6 +67,18 @@ Disallow: /case-study/learnosity
 Disallow: /case-study/clueylearning
 Disallow: /case-study/senecalearning
 Disallow: /case-study/snitch
+Disallow: /case-study/fynd
+Disallow: /case-study/jaypore
+Disallow: /case-study/kogan
+Disallow: /case-study/onbuy
+Disallow: /case-study/onceit
+Disallow: /case-study/zypit
+Disallow: /case-study/thegrocart
+Disallow: /case-study/milkrun
+Disallow: /case-study/volygroup
+Disallow: /case-study/weezy
+Disallow: /case-study/zapp
+Disallow: /case-study/oda
 
 Allow: /blog/tag/new-google-assistant-apk
 Allow: /blog/tag/apps-built-with-flutter
