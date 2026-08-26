@@ -44,6 +44,7 @@ const CaseStudy = () => {
     { label: 'FinTech', value: 'fintech' },
     { label: 'EdTech', value: 'edtech' },
     { label: 'E-Commerce', value: 'e-comm' },
+    { label: 'Healthcare', value: 'healthcare' },
     { label: 'CMS', value: 'cms' },
   ];
 

@@ -79,6 +79,13 @@ Disallow: /case-study/volygroup
 Disallow: /case-study/weezy
 Disallow: /case-study/zapp
 Disallow: /case-study/oda
+Disallow: /case-study/ekacare
+Disallow: /case-study/nirogstreet
+Disallow: /case-study/healthengine
+Disallow: /case-study/zava
+Disallow: /case-study/livi
+Disallow: /case-study/tend
+Disallow: /case-study/hotdoc
 
 Allow: /blog/tag/new-google-assistant-apk
 Allow: /blog/tag/apps-built-with-flutter
